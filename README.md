@@ -4,11 +4,16 @@ Parallax installer downloads and signed update information.
 
 ## Install
 
-1. Install pyRevit if it is not already available on your computer.
-2. Download the latest `Parallax_Setup_vX.Y.Z.exe` from [Releases](https://github.com/Kratos141-MEP/Parallax-Releases/releases/latest).
-3. Close AutoCAD, then run the installer. Revit can remain open; use pyRevit > Reload after a manual installation.
-4. Enter the password supplied separately by the distributor for that version.
+1. Download the latest `Parallax_Setup_vX.Y.Z.exe` from [Releases](https://github.com/Kratos141-MEP/Parallax-Releases/releases/latest).
+2. Run Setup and enter the password supplied separately by the distributor. Installation is per Windows user.
+3. From 1.5.4, Setup includes pyRevit for machines without it and preserves a valid existing pyRevit environment. A new pyRevit installation requires restarting Revit. Otherwise follow Setup's Reload/restart instructions.
+4. Revit may remain open during installation. Close AutoCAD if Setup requests it to replace or repair CadBridge; matching bundles can remain in use.
+5. Chat includes its own runtime and PDF readers. Sign in with ChatGPT through Codex Setup.
 
-An existing Parallax installation is not required. From version 1.4.1, Parallax can check for newer versions and download a verified installer. The updated 1.4.3 client opens Setup automatically after you click Update and the download is verified. Enter the new release password to install; close AutoCAD only. Older clients require a manual EXE launch once to gain this flow.
+Version 1.5.4 is offered for direct user testing. Clean-machine installation and new Revit workflows have not completed live acceptance. See the installed Patch Notes for changes and scope.
 
-`manifest.json` is signed update metadata used by Parallax. Do not run it. The project signature verifies the update; it is not a Windows publisher certificate.
+pyRevit is distributed under GPL v3 with upstream notices and [the exact corresponding source](https://codeload.github.com/pyrevitlabs/pyRevit/zip/refs/tags/v6.4.0.26100%2B0515). Parallax installation restrictions do not restrict rights to that component.
+
+`manifest.json` is signed update metadata used by Parallax. Do not run it. The project signature authenticates the package; it does not provide a Windows publisher certificate. Older clients that cannot read the new update information must download and run the latest installer manually.
+
+Users on 1.5.3: download and run the 1.5.4 EXE manually once. Its bundled runtime and pyRevit exceed the old client update-size limit.

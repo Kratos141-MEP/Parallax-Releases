@@ -4,6 +4,8 @@ Parallax installer downloads and signed update information.
 
 ## Install
 
+The 1.5.4 installer was replaced on 15 October 2026 to fix Setup stopping on malformed XML in an unrelated Revit add-in registration. Existing add-in files are preserved. If you downloaded 1.5.4 before this replacement, download the EXE again and run it manually; the version and installer password are unchanged.
+
 1. Download the latest `Parallax_Setup_vX.Y.Z.exe` from [Releases](https://github.com/Kratos141-MEP/Parallax-Releases/releases/latest).
 2. Run Setup and enter the password supplied separately by the distributor. Installation is per Windows user.
 3. From 1.5.4, Setup includes pyRevit for machines without it and preserves a valid existing pyRevit environment. A new pyRevit installation requires restarting Revit. Otherwise follow Setup's Reload/restart instructions.

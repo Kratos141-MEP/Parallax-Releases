@@ -6,6 +6,10 @@ Parallax installer downloads and signed update information.
 
 User 1.5.5 improves ParaLink Category/Family values, Profile workflows, Chat and native operation results. **The installer does not include the Routix tab.**
 
+**Reissued 27 October 2026:** OneFilter now loads native Contains Profiles when a linked model is unloaded or saved regions/Levels are no longer available. It restores checks only for existing regions and does not run Find/Set or rewrite the Profile. Real read failures still stop loading.
+
+**Already installed or downloaded 1.5.5? Download the new EXE and install it manually.** The version and installer password are unchanged, so Check for updates does not offer this same-version repair automatically.
+
 1. Download `Parallax_Setup_v1.5.5.exe` from [Release 1.5.5](https://github.com/Kratos141-MEP/Parallax-Releases/releases/tag/v1.5.5).
 2. Run Setup and enter the password supplied separately by the distributor. Installation is per Windows user.
 3. Setup includes pyRevit for machines without it and preserves a valid existing pyRevit environment. A new pyRevit installation requires restarting Revit. Otherwise follow Setup's Reload/restart instructions.
